@@ -330,7 +330,11 @@ li{list-style-type:none}
 }
 @media (min-width: 768px) {
   .lead {
-	
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.46428571;
+    font-weight: 300;
   }
 }
 small,
