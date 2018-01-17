@@ -83,27 +83,15 @@ margin: auto;
 
 /*own carousel */
 
-#owl-demo .item{
-  margin: 3px;
-}
-#owl-demo .item img{
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-#owl-demo-1 .item{
+#owl-demo .item,
+#owl-demo-1 .item,
+#owl-demo-2 .item {
 	 margin: 3px;
  }
-#owl-demo-1 .item img{
-	display: block;
-	width: 100%;
-	height: auto;
-}
-#owl-demo-2 .item{
-	margin: 3px;
-}
-#owl-demo-2 .item img{
+
+#owl-demo .item img,
+#owl-demo-1 .item img,
+#owl-demo-2 .item img {
 	display: block;
 	width: 100%;
 	height: auto;
