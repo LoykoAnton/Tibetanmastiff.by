@@ -433,16 +433,16 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap requires jQuery'
   // CAROUSEL DATA-API
   // =================
 
-  $(document).on('click.bs.carousel.data-api', '[data-slide], [data-slide-to]', function (e) {
+  $(document).on('click.bs.carousel.data-api', '[data-puppies], [data-puppies-to]', function (e) {
     var $this   = $(this), href
     var $target = $($this.attr('data-target') || (href = $this.attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '')) //strip for ie7
     var options = $.extend({}, $target.data(), $this.data())
-    var slideIndex = $this.attr('data-slide-to')
+    var slideIndex = $this.attr('data-puppies-to')
     if (slideIndex) options.interval = false
 
     $target.carousel(options)
 
-    if (slideIndex = $this.attr('data-slide-to')) {
+    if (slideIndex = $this.attr('data-puppies-to')) {
       $target.data('bs.carousel').to(slideIndex)
     }
 
@@ -855,7 +855,7 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap requires jQuery'
       var e = $.Event('shown.bs.modal', { relatedTarget: _relatedTarget })
 
       transition ?
-        that.$element.find('.modal-dialog') // wait for modal to slide in
+        that.$element.find('.modal-dialog') // wait for modal to puppies in
           .one($.support.transition.end, function () {
             that.$element.focus().trigger(e)
           })
